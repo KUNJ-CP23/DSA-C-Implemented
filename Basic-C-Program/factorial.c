@@ -1,5 +1,6 @@
 // 8. Factorial
 
+//without recursion
 #include <stdio.h>
 void main() {
     int n, i;
@@ -11,3 +12,21 @@ void main() {
     }
     printf("Factorial = %d", fact);
 }
+
+// with recursion
+
+// #include <stdio.h>
+
+// int factorial(int n) {
+//     if(n == 0 || n == 1)
+//         return 1;
+//     else
+//         return n * factorial(n - 1);
+// }
+
+// void main() {
+//     int n;
+//     printf("Enter a number: ");
+//     scanf("%d", &n);
+//     printf("Factorial = %d", factorial(n));
+// }
