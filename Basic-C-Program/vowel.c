@@ -1,4 +1,5 @@
 //3. Checking vowel
+
 #include <stdio.h>
 void main() {
     char ch;
