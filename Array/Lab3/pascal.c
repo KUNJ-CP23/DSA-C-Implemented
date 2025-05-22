@@ -10,5 +10,6 @@ void main() {
             printf("%d ", num);
             num = num * (i - j) / (j + 1);
         }
+        printf("\n");
     }
 }
