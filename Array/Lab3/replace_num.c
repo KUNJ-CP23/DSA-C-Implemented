@@ -15,6 +15,7 @@ void main() {
             printf("Index = %d ", i);
         }
     }
+    printf("\nNew Array : ");
     for(i = 0; i < n; i++)
         printf("%d ", a[i]);
 }

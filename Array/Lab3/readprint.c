@@ -8,6 +8,7 @@ void main() {
     scanf("%d", &n);
     for(i = 0; i < n; i++)
         scanf("%d", &a[i]);
+    printf("Array is: ");
     for(i = 0; i < n; i++)
         printf("%d ", a[i]);
 }

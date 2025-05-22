@@ -14,7 +14,7 @@ void main() {
             }
         }
     }
-    if(found)
+    if(found==1)
         printf("Duplicate found");
     else
         printf("No duplicate");

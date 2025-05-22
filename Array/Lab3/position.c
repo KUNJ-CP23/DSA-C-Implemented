@@ -1,4 +1,4 @@
-//19. Position 
+//19. Write a program to find position of mallest number & largest number from given n numbers.
 #include <stdio.h>
 
 void main() {
@@ -19,5 +19,6 @@ void main() {
             maxPos = i;
         }
     }
-    printf("MinPos = %d MaxPos = %d", minPos, maxPos);
+    //gives zero based index position
+    printf("MinPosition = %d MaxPosition = %d", minPos, maxPos);
 }
