@@ -1,18 +1,33 @@
 // 15.Armstrong
-#include <stdio.h>
-
-void main() {
-    int i, num, sum, rem, temp;
-    for(i = 1; i <= 1000; i++) {
-        num = i;
-        sum = 0;
-        temp = num;
-        while(temp != 0) {
-            rem = temp % 10;
-            sum += rem * rem * rem;
-            temp /= 10;
-        }
-        if(sum == num)
-            printf("%d ", num);
-    }
+#include <stdio.h> 
+#include <math.h> 
+ 
+int armstrong(int); 
+int len(int); 
+ 
+void main(){ 
+    int i =1; 
+    while(i<=1000){ 
+        int isArmStrong = armstrong(i); 
+        if(isArmStrong == 1) 
+        printf("%d, ",i); 
+        i++; 
+    } 
+} 
+ 
+int len(int n){ 
+    int i=0; 
+    for(i=0;n!=0;i++,n/=10){} 
+    return i; 
+} 
+ 
+int armstrong(int n){ 
+    int dummy = n; 
+    int sum = 0; 
+    int length = len(n); 
+    while(dummy>0){ 
+        sum+= pow(dummy%10,length); 
+        dummy/=10; 
+    } 
+    return (sum == n?1:0); 
 }

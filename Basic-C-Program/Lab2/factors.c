@@ -1,12 +1,18 @@
 // 11. Factors
-#include <stdio.h>
-
-void main() {
-    int n, i;
-    printf("Enter a number: ");
-    scanf("%d", &n);
-    for(i = 1; i <= n; i++) {
-        if(n % i == 0)
-            printf("%d ", i);
-    }
+#include <stdio.h> 
+ 
+void main() 
+{ 
+    int num; 
+ 
+    printf("Enter a Number = "); 
+    scanf("%d", &num); 
+ 
+    for (int i = 1; i <= num; i++) 
+    { 
+        if (num % i == 0) 
+        { 
+            printf("%d,", i); 
+        } 
+    } 
 }

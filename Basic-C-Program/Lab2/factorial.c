@@ -1,17 +1,21 @@
 // 8. Factorial
 
 //without recursion
-#include <stdio.h>
-void main() {
-    int n, i;
-    int fact = 1;
-    printf("Enter a number: ");
-    scanf("%d", &n);
-    for(i = 1; i <= n; i++){
-        fact *= i;
-    }
-    printf("Factorial = %d", fact);
-}
+#include<stdio.h> 
+ 
+void main(){ 
+    int number; 
+    int ans = 1; 
+     
+    printf("Enter Number = "); 
+    scanf("%d",&number); 
+     
+    for(int i = number;i>=1;i--){ 
+        ans = ans*i; 
+    } 
+     
+    printf("Factorial of %d is = %d",number,ans); 
+} 
 
 // with recursion
 
