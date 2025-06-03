@@ -1,4 +1,4 @@
-// 13. Prime Number
+// 13. Prime Number in interval
 #include <stdio.h> 
 #include <math.h> 
  

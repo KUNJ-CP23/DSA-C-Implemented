@@ -1,6 +1,7 @@
 // 8. Factorial
 
 //without recursion
+
 #include<stdio.h> 
  
 void main(){ 
