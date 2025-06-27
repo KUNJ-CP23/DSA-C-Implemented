@@ -7,7 +7,6 @@ int binarySearchIterative(int arr[], int size, int key) {
 
     while(low <= high) {
         int mid = (low + high) / 2;
-
         if(arr[mid] == key)
             return mid;
         else if(arr[mid] < key)
@@ -15,7 +14,6 @@ int binarySearchIterative(int arr[], int size, int key) {
         else
             high = mid - 1;
     }
-
     return -1;
 }
 int main() {
