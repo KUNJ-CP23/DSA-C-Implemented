@@ -9,7 +9,6 @@ int main() {
     for (int i = 0; i < 5; i++) {
         scanf("%d", ptr + i);
     }
-
     printf("Array elements are:\n");
     for (int i = 0; i < 5; i++) {
         printf("%d ", *(ptr + i));
